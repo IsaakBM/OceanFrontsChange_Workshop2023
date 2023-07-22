@@ -1,9 +1,19 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+All the code was written by Isaac Brito-Morales (ibrito\@conservation.org)
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Please do not distribute this code without permission
 
-```{r}
-1 + 1
+NO GUARANTEES THAT CODE IS CORRECT
+
+Caveat Emptor!
+
+# Acknowledgements
+
+Ocean Front data: [Floriande Sudre](floriane.sudre@mio.osupytheas.fr), Mediterranean Institute of Oceanography, France
+
+Whale shark dataset: [Dr Chris Ronner](chris@marinemegafauna.org), Marine Megafauna Foundation
+
+```{r, out.width = "100%", echo = FALSE}
+  knitr::include_graphics("images/_1540250.jpg")
 ```
