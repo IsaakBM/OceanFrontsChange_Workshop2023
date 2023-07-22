@@ -60,5 +60,4 @@ plot(sim.crw, type = "l", asp = 1, main = "Correlated Random walk")
   plot(final2)
   lines(sim.crw)
   plot(rs_wts, add = TRUE, col = "blue")
-###
 ```
