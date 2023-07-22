@@ -2,13 +2,19 @@ project:
   type: book
 
 book:
-  title: "OceanFrontsChange_Workshop2023"
-  author: "Norah Jones"
+  title: "Ocean Fronts Change Workshop 2023"
+  author: "Isaac Brito-Morales"
   date: "7/22/2023"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - 01_preparation.qmd
+    - 02_set_up.qmd
+    - 03_climate_data.qmd
+    - 04_ncRaster.qmd
+    - 05_equalGrid.qmd
+    - 06_climatePUs.qmd
+    - 07_matchingMFOFC.qmd
+    - 08_Appendix01_randomwalk.qmd
     - references.qmd
 
 bibliography: references.bib
