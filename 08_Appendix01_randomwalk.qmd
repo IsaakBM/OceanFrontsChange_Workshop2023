@@ -1,0 +1,16 @@
+# Appendix 1: Random Walk analysis in R
+
+A Random Walk analysis, is a statistical modeling technique used to simulate and analyze sequences of random data points over time.
+
+In a Random Walk, the next data point in the sequence is determined by the current data point plus a random value drawn from a random distribution. The random distribution can be Gaussian (normal), uniform, or any other suitable distribution depending on the application.
+
+## Data import
+
+Source the required dataset.
+
+```{r, message = FALSE, warning = FALSE, out.width = "40%", eval = TRUE}
+library(SiMRiv)
+rand.walker <- species(state.RW())
+sim.rw <- simulate(rand.walker, 10000)
+plot(sim.rw, type = "l", asp = 1, main = "Random walk")
+```
