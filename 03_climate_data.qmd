@@ -38,3 +38,23 @@ To install **ncview**, open the terminal and type:
 
 -   **OS X**: `port install ncview`
 -   **Linux**: `sudo apt-get install ncview`
+
+## Working with CDO and ncview
+
+To work with **CDO** and **ncview** you will need to use the terminal command line. Open the **Ubuntu app** in Windows and the **Terminal** on OS X. Let's check a folder in your desktop:
+
+In your command line type:
+
+-   `cd OceanFrontsChange_Workshop2023/data/` (this will establish *data* as your primary directory)
+
+If your are using Windows your desktop path should be located at `/mnt/c/`.
+
+Because you have setting `OceanFrontsChange_Workshop2023/data/` as your directory in the terminal, we can use *ncview* to get a quick view of the front data
+
+- type `ls -l` to see if the front data is in your directory.
+- to view the model with ncview, in the terminal type `ncview BOAonMUR_SWIO_Y2003-M1-D1.nc`.
+
+
+
+
+
