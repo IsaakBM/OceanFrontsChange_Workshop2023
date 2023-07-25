@@ -10,7 +10,7 @@ The workshop will run 9-3 pm (South African Time) on Tuesday 25th, Wednesday 26t
   knitr::include_graphics("images/NMz_weighted_100km2_v02_Intbugfx.png")
 ```
 
-# Open Science: [NCEAS](https://www.nceas.ucsb.edu/our-approach)
+## Open Science: [NCEAS](https://www.nceas.ucsb.edu/our-approach)
 
 With this material, we are following the [NCEAS](https://www.nceas.ucsb.edu/our-approach) data approach to make research more transparent and reproducible, which enhances the credibility, utility, and accuracy of the science used to solve global challenges.
 
