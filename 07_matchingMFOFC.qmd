@@ -13,9 +13,9 @@ Or you can actually do the step-by-step.
 
 ```{r, eval = FALSE, out.width = "40%", eval = FALSE}
 
-#############################
+###################################
 ####### Whale Shark (mmf dataset)
-#############################
+###################################
 
 # Read the files
   ws01 <- readRDS("data/mm_mmf/MMF_WhaleSharkTracks_Madagascar.rds")
@@ -85,7 +85,7 @@ source("zscripts/z_helpFX.R")
   cutoff = 0.75
   output = "data/"
 
-# 
+# Read the front dataset
   PUs <- st_read(pus)
   sf1 <- readRDS(fsle_sf)
   nms <- names(sf1) %>% 
