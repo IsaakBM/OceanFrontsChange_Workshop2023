@@ -24,6 +24,7 @@ You can read netCDF using `raster:::stack` or the `raster:::terra` functions fro
 # NO GUARANTEES THAT CODE IS CORRECT
 # Caveat Emptor!
   
+# Define generalities 
   nc = "data/BOAonMUR_SWIO_Y2003-M1-D1.nc"
   v = "temp_gradient" 
   x = "lon"
@@ -44,13 +45,13 @@ You can read netCDF using `raster:::stack` or the `raster:::terra` functions fro
   tt <- as.POSIXct(tt)
   tt <- as.Date(tt)
   ncdf4::nc_close(nc)
-  # Make a raster with the right dims to fill with lat&lon
-    rs <- terra::rast(nrow = Y, ncol = X, extent = terra::ext(c(rlon, rlat)))
-    # Fix orientation of original data
-    # [and then create a raster with this fix orientation]
+# Make a raster with the right dims to fill with lat&lon
+  rs <- terra::rast(nrow = Y, ncol = X, extent = terra::ext(c(rlon, rlat)))
+  # Fix orientation of original data
+  # [and then create a raster with this fix orientation]
     drs <- terra::xyFromCell(rs, 1:terra::ncell(rs)) %>%
       as_tibble()
-    # Create raster stacks of depths for every month
+  # Create raster stacks of depths for every month
     rs_list <- list() # to allocate results # nolint
     st <- terra::rast()
     for (i in 1:length(tt)) { # nolint
@@ -68,8 +69,7 @@ You can read netCDF using `raster:::stack` or the `raster:::terra` functions fro
 Crop/Manipulate and project
 
 ```{r, eval = FALSE, out.width = "40%", eval = FALSE}
-# NO GUARANTEES THAT CODE IS CORRECT
-# Caveat Emptor!
+# The Mozambique Channel
   st <- terra::crop(st, terra::ext(c(30, 75, -35, -7)))
   terra::crs(st) <- "+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"
 ```
