@@ -13,7 +13,9 @@ library(nngeo)
 library(stringr)
 ```
 
-## Generic Function to replace NAs with nearest neighbor.
+## Generic Function to replace NAs with nearest neighbor. 
+
+This is just a generic function that uses `nngeo` R package. Feel free to used and adapt it to your needs.
 
 ```{r, eval = FALSE, out.width = "40%", eval = FALSE}
 
