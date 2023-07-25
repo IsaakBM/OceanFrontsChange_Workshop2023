@@ -69,14 +69,13 @@ The model details are:
 
 There are several things that you can explore. Some interesting functions that I've used a lot are:
 
-- `cdo -yearmean` calculates the *annual mean* of a monthly data input **netCDF** file
-- `cdo -yearmin` calculates the *annual min* of a monthly data input **netCDF** file
-- `cdo -yearmax` calculates the *annual max* of a monthly data input **netCDF** file
-- `cdo -ensmean` calculates the *ensemble mean* of several **netCDF** files. If your input files are different models, this function will estimate a mean of all those models
-- `cdo -vertmean` calculates the vertical mean for **netCDF** with olevel (i.e., depth)
-- `cdo -mergetime` merge all the **netCDF** files in your directory
-  
+-   `cdo -yearmean` calculates the *annual mean* of a monthly data input **netCDF** file
+-   `cdo -yearmin` calculates the *annual min* of a monthly data input **netCDF** file
+-   `cdo -yearmax` calculates the *annual max* of a monthly data input **netCDF** file
+-   `cdo -ensmean` calculates the *ensemble mean* of several **netCDF** files. If your input files are different models, this function will estimate a mean of all those models
+-   `cdo -vertmean` calculates the vertical mean for **netCDF** with olevel (i.e., depth)
+-   `cdo -mergetime` merge all the **netCDF** files in your directory
+
 To use those argument remember just type in the terminal:
 
-- cdo **-[function]** *input_file* *output_file*
-
+-   cdo **-\[function\]** *input_file* *output_file*
