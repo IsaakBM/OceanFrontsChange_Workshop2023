@@ -12,6 +12,6 @@ The workshop will run 9-3 pm (South African Time) on Tuesday 25th, Wednesday 26t
 
 # Open Science: [NCEAS](https://www.nceas.ucsb.edu/our-approach)
 
-We aim to make research more transparent and reproducible, which enhances the credibility, utility, and accuracy of the science used to solve global challenges.
+With this material, we are following the [NCEAS](https://www.nceas.ucsb.edu/our-approach) data approach to make research more transparent and reproducible, which enhances the credibility, utility, and accuracy of the science used to solve global challenges.
 
 Open science is the philosophy and practice of making data and methods accessible, replicable, and free to use, typically through computer programming tools and techniques. It helps researchers compile and analyze data more efficiently and identify solutions more quickly.
