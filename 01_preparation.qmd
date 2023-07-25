@@ -4,6 +4,8 @@ Welcome to the Ocean Fronts Change Megafauna Workshop! This workshop is specific
 
 Please note that the objective of this workshop is not to provide a comprehensive overview that would make you an expert in this field. Rather, our goal is to help you grasp the core principles underlying the relationships between ocean fronts and megafauna, and to guide you through some of the common tasks involved in analyzing and interpreting such data.
 
+The workshop will run 9-3 pm (South African Time) on Tuesday 25th, Wednesday 26th and Thursday 27 July 2023.
+
 ```{r, out.width = "100%", echo = FALSE}
   knitr::include_graphics("images/NMz_weighted_100km2_v02_Intbugfx.png")
 ```
