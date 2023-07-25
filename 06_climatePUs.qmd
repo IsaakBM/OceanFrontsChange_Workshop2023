@@ -47,7 +47,8 @@ This is just a generic function that uses `nngeo` R package. Feel free to used a
 ## Read, Extract and weighted mean interpolation
 
 ```{r, eval = FALSE, out.width = "40%", eval = FALSE}
-proj.geo = "+proj=robin +lon_0=0 +datum=WGS84 +units=m +no_defs"
+# Create the projection
+  proj.geo = "+proj=robin +lon_0=0 +datum=WGS84 +units=m +no_defs"
 # Reading equal grid file
   shp_file <- st_read("data/PUs_MZ_100km2.shp") %>% 
     st_transform(crs = terra::crs(proj.geo))
