@@ -62,7 +62,7 @@ source("zscripts/z_helpFX.R")
 
 ```{r, eval = FALSE, out.width = "40%", eval = FALSE}
   g1 <- ggplot() +
-    geom_sf(data = PUs, size = 0.05) +
+    geom_sf(data = PUs1, size = 0.05) +
     geom_sf(data = world_sfRob, size = 0.05, fill = "grey20") +
     theme_bw()
   
