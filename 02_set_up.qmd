@@ -24,7 +24,7 @@ An R package is a collection of R code and documentation that can be installed t
 install.packages(c("sf", "terra", "dplyr", "sp", "rgeos", "rgdal", "raster",
                    "units", "tidyr", "stringr", "readr", "transformr", "data.table",
                    "ggplot2", "RColorBrewer", "rnaturalearth", "rnaturalearthdata",
-                   "ggtext", "lwgeom"))
+                   "ggtext", "lwgeom", "patchwork", "gganimate", "animation"))
 
 # Optional packages
   # library(ncdf4)
