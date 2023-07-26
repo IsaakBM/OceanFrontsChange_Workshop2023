@@ -49,7 +49,7 @@ Or you can actually do the step-by-step.
 ## Plotting and testing
 
 ```{r, eval = TRUE, out.width = "100%", eval = TRUE}
-# 
+# Getting the "help" scripts from source
   source("zscripts/z_inputFls.R")
   source("zscripts/z_helpFX.R") # and the Help function just in case :-)
 # Pick a random object from above
@@ -176,11 +176,11 @@ lsout <- dst1 %>%
 
 ```{r, eval = FALSE, out.width = "40%", eval = FALSE}
 
-# 
+# Getting the dates
   s1 <- lsout
   Fdates <- as.vector(unique(s1$date))
   
-#
+# Plotting
   ff <- ggplot(data = s1,  aes(x = neardist, fill = date)) +
       geom_histogram(data = subset(s1, date == Fdates),
                      aes(x = neardist, y = (..count..)/sum(..count..)), 
