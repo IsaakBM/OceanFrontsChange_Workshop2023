@@ -7,6 +7,10 @@ The aim of this tutorial is to provide a worked example (i.e., a function) of ho
 Load the required packages.
 
 ```{r, message = FALSE, warning = FALSE, out.width = "40%", eval = FALSE}
+
+install.packages(c("terra", "ncdf4", "ncdf4.helpers", "PCICt", 
+                   "dplyr", "magrittr"))
+
 # load packages
 library(terra)
 library(ncdf4)
