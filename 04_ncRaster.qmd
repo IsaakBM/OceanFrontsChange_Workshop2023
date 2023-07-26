@@ -22,7 +22,7 @@ You can read netCDF using `raster:::stack` or the `terra:::rast` functions from 
 
 ```{r, eval = FALSE, out.width = "40%", eval = FALSE}
 # NO GUARANTEES THAT CODE IS CORRECT
-# Caveat Emptor!
+# Caveat Emptor! (Latin for "Let the buyer beware")
   
 # Define generalities 
   nc = "data/BOAonMUR_SWIO_Y2003-M1-D1.nc"
