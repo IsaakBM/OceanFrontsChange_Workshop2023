@@ -33,12 +33,12 @@ PUs <- st_make_grid(c,
                     crs = st_crs(c)) %>%
   st_sf()
 
-plot(st_geometry(PUs))
+
 
 # Get rid of "land" polygons
 logi_PUs <- st_centroid(PUs) %>%
   st_intersects(c) %>% 
   lengths > 0 # Get logical vector instead of sparse geometry binary
 PUs1 <- PUs[logi_PUs == TRUE, ]
-plot(st_geometry(PUs1))
+
 
