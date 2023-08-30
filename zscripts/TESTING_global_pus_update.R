@@ -3,6 +3,8 @@
 library(terra)
 library(sf)
 library(rnaturalearth)
+library(ggplot2)
+
 LatLon <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" # nolint
 moll <- "+proj=moll +lon_0=0 +datum=WGS84 +units=m +no_defs" # nolint
 robin <- "+proj=robin +lon_0=0 +datum=WGS84 +units=m +no_defs" # nolint
@@ -40,5 +42,17 @@ logi_PUs <- st_centroid(PUs) %>%
   st_intersects(c) %>% 
   lengths > 0 # Get logical vector instead of sparse geometry binary
 PUs1 <- PUs[logi_PUs == TRUE, ]
+
+# plot(st_geometry(PUs1))
+# plot(st_geometry(world_borders_sf))
+
+sphere <- ne_download(category = "physical", type = "wgs84_bounding_box", returnclass = "sf")
+sphere_robin <- st_transform(sphere, crs = robin)
+
+g1 <- ggplot() +
+  geom_sf(data = sphere_robin, size = 0.05) +
+  geom_sf(data = PUs1, size = 0.05) +
+  geom_sf(data = world_borders_sf, size = 0.05, fill = "grey20") +
+  theme_bw()
 
 
