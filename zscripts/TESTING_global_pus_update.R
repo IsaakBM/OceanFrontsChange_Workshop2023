@@ -1,22 +1,4 @@
 
-#### Create a global polygon for ABNJ 
-
-world_borders_sf <- ne_countries(scale = "medium", returnclass = "sf")
-world_borders_rs <- as(world_borders_sf, "SpatVector")
-plot(world_borders_rs)
-
-rs <- raster(ncol = 720, nrow = 360)
-rs[] <- 1:ncell(rs)
-
-rs <- raster(ncol = 720, nrow = 360)
-rs[] <- 1:ncell(rs)
-
-
-terra::rast(c(xmin = -180, xmax = 180, ymax = 90, ymin = -90), res = 1, crs = "+proj=robin +lon_0=0 +datum=WGS84 +units=m +no_defs")
-
-
-
-
 #
 library(terra)
 library(sf)
