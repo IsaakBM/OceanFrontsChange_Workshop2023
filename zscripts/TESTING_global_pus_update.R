@@ -55,4 +55,5 @@ g1 <- ggplot() +
   geom_sf(data = world_borders_sf, size = 0.05, fill = "grey20") +
   theme_bw()
 
+ggsave("PUs_trial.png", plot = g1, width = 30, height = 20, dpi = 600, limitsize = FALSE)
 
