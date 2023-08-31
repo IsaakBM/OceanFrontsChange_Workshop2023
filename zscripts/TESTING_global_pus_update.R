@@ -1,5 +1,29 @@
+# This code was written by Isaac Brito-Morales (ibrito@conservation.org)
+# Please do not distribute this code without permission.
+# NO GUARANTEES THAT CODE IS CORRECT
+# Caveat Emptor!
 
-#
+# ncell_rs
+# 0.10 = 3600, 1800
+# 0.01 = 36000, 18000
+
+equal_area_grid <- function(area_km2, ncell_rs, outdir) {
+ 
+  library(terra)
+  library(sf)
+  library(rnaturalearth)
+  library(ggplot2)  
+  
+# projections
+  LatLon <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+  moll <- "+proj=moll +lon_0=0 +datum=WGS84 +units=m +no_defs"
+  robin <- "+proj=robin +lon_0=0 +datum=WGS84 +units=m +no_defs"
+  
+  
+  
+  
+}
+
 library(terra)
 library(sf)
 library(rnaturalearth)
@@ -12,8 +36,8 @@ robin <- "+proj=robin +lon_0=0 +datum=WGS84 +units=m +no_defs" # nolint
 
 world_borders_sf <- ne_countries(scale = "medium", returnclass = "sf")
 world_borders_rs <- as(world_borders_sf, "SpatVector")
-rs <- terra::rast(ncol = 1440, nrow = 720, extent = ext(c(-180, 180, -90, 90)))
-rs[] <- 1:1036800
+rs <- terra::rast(ncol = 36000, nrow = 18000, extent = ext(c(-180, 180, -90, 90)))
+rs[] <- 1:6480000
 
 b <- terra::rasterize(world_borders_rs, rs)
 b[] <- ifelse(is.na(b[]), 2, NA)
